@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins';
+}
+
+.logo {
+    width: 200px;
+    margin-left: 10%;
+    float: left;
+}
+
+nav {
+    text-align: right;
+    margin-right: 10%
+}
+
+nav > ul {
+    display:inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+header {
+    position: sticky;
+    /* fixed pushes my navbar down */
+    width: 100%;
+    height: 40px;
+    z-index: 1;
+    background-color: white;
+}
+
+.navbar > a:link {
+    position: relative;
+    color: #6666ff;
+    text-decoration: none;
+}
+
+.navbar > a:visited {
+    color: #6666ff;
+}
+
+.navbar > a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #6666ff;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+.navbar > a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+
+section {
+    background-image: url("/img/cakepops2.jpg");
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 700px;
+    box-shadow: 0 700px rgb(106, 90, 205,.3) inset;
+}
+
+section > h1, h2, p {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    text-align: center;
+}
+
+section > h1 {
+    top: 45%;
+    color: white;
+    font-size: 50px;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+}
+
+section > p {
+    top: 38%;
+    color: white;
+    font-family: 'Playfair Display';
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.order {
+    top: 40%;
+    color: white;
+    background-color: #6666ff;
+    border-radius: 35px;
+    font-family: 'Segoe UI';
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 15px 30px 15px 30px;
+    width: 10%;
+}
+
+.aorder {
+    text-decoration: none;
+}
+
+.instructions {
+    font-family: 'Playfair Display';
+    font-weight: 500;
+    font-size: 25px;
+    color: rgb(45, 12, 83);
+    text-align: center;
+    padding: 20px;
+}
+
+.column1, .column2, .column3 {
+    float: left;
+    width: 30%;
+    text-align: center;
+    color:rgb(45, 12, 83);
+    font-family: 'Playfair Display';
+    font-size: 20px;
+  }
+
+.column1 {
+    margin-left: 5%;
+}
+
+.column3 {
+    margin-right: 5%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.newsletter {
+    margin-top: 50px;
+    background: linear-gradient(45deg, #778beb, #f896b8);
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+    height: 300px;
+    text-align: center;
+    padding: 20px;
+}
+
+.textbar {
+    width:50%;
+    height: 70px;
+    background: #f1f1f199;
+    border-radius: 40px;
+    position: relative;
+    margin-top: 40px;
+    margin-left: 25%;
+}
+
+.textbar input {
+    width: 80%;
+    height: 70px;
+    border-radius: 40px;
+    border: 0;
+    background: none;
+    padding: 0 30px;
+    outline: none;
+    font-size: 15px;
+}
+
+.textbar button {
+    background: #574b90;
+    border: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.3s linear;
+}
+
+.footer {
+    text-align: center;
+    color: #fff;
+    margin: 40px 0 25px 0;
+}
+
+.footer > a {
+    padding: 15px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+  }
+
+
+.flink1, .flink2 {
+    float: right;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    text-transform: capitalize;
+    margin: 0 10px 0 10px;
+}
+
+.flink1 {
+    margin-right: 15%;
+}
+
+.copyright {
+    text-align: left;
+    font-size: 12px;
+    font-weight: 200px;
+    color: white;
+    margin: 10px 0 0 15%;
+    float: left;
+    text-transform: capitalize;
+}
+
+
+
+  /* ---------------------------------About Us Page------------------------------ */
+
+.about {
+    margin: 5%;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 30px;
+    color: rgb(45, 12, 83);
+    text-transform: uppercase;
+}
+
+  .p1, .p2 {
+    font-family: 'Playfair Display';
+    font-size: 20px;
+    color: rgb(45, 12, 83);
+    /* text-align: justify;
+    text-justify: inter-word; */
+    width: 50%;
+    height: 20%;
+    margin: 5% 5% -5% 15%;
+    float: left;
+}
+
+.candy > img {
+    width: 18%;
+    border-radius: 20px;
+}
+
+.footer2 {
+    text-align: center;
+    color: rgb(45, 12, 83);
+    margin-top: 8%;
+}
+
+.social2 > a {
+    padding: 15px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(45, 12, 83);
+  }
+
+
+.flink3, .flink4 {
+    float: right;
+    color: rgb(45, 12, 83);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0 10px 10px 10px;
+}
+
+hr {
+    color:rgb(194, 191, 191);
+    border-color: rgb(194, 191, 191)y;
+} 
+
+.flink3 {
+    margin-right: 15%;
+}
+
+.copyright2 {
+    text-align: left;
+    font-size: 12px;
+    margin-left: 15%;
+    margin-top: 10px;
+    color: rgb(45, 12, 83);
+    font-weight: 600;
+    float: left;
+    text-transform: capitalize;
+}
+
+.background {
+    height:117vh;
+    width:100%;
+    background:linear-gradient(140deg, white, white 65%, #f8a5c2 65%, #f8a5c2);
+}
+
+/* ----------------------------Contact Page----------------------------- */
+
+.contacttitle {
+    margin: 5% 5% 0% 5%;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 30px;
+    color: rgb(45, 12, 83);
+    text-transform: uppercase;
+}
+
+input[type=text], select, textarea {
+    width: 40%;
+    padding: 12px;
+    margin: 30%;
+    box-sizing: border-box;
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+    resize: vertical;
+    font-family: 'Poppins';
+    font-size: 18px;
+}
+
+input[type=submit] {
+    margin-left: 30%;
+    display: block;
+    background-color: #6666ff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Poppins';
+    cursor: pointer;
+}
+
+.footer3 {
+    text-align: center;
+    color: rgb(45, 12, 83);
+    margin-top: 20px;
+}
+
+.background2 {
+    height:142vh;
+    width:100%;
+    background:linear-gradient(140deg, white, white 65%, #778beb 65%, #778beb);
+}
