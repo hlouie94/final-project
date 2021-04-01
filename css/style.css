@@ -126,7 +126,7 @@ section > p {
 
 .column1, .column2, .column3 {
     float: left;
-    width: 30%;
+    width: 27%;
     text-align: center;
     color:rgb(45, 12, 83);
     font-family: 'Playfair Display';
@@ -134,11 +134,11 @@ section > p {
   }
 
 .column1 {
-    margin-left: 5%;
+    margin-left: 10%;
 }
 
 .column3 {
-    margin-right: 5%;
+    margin-right: 10%;
 }
 
 .row:after {
