@@ -134,11 +134,7 @@ section > p {
   }
 
 .column1 {
-    margin-left: 10%;
-}
-
-.column3 {
-    margin-right: 10%;
+    margin-left: 15%;
 }
 
 .row:after {
