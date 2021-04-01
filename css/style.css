@@ -30,7 +30,6 @@ nav > ul {
 
 header {
     position: sticky;
-    /* fixed pushes my navbar down */
     width: 100%;
     height: 40px;
     z-index: 1;
